@@ -237,6 +237,64 @@
             </div>
           </div>
 
+          <!-- Project 5: Sakura Elegance Web App -->
+          <div class="project-card" data-repo="SakuraElegance">
+            <div class="project-image">
+              <img src="Images/Projects/Sakura Elegance.png" alt="Sakura Elegance luxury beauty storefront homepage" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <button class="project-link" onclick="openProjectDetails('SakuraElegance')">
+                    <i class="fas fa-info-circle"></i>
+                  </button>
+                  <a href="https://sakuraeleganceworldwide.com/" class="project-link github-link" target="_blank" rel="noopener noreferrer" title="Visit live site">
+                    <i class="fas fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Full Stack • Web Development</div>
+              <h3>Sakura Elegance Web App</h3>
+              <p>Sakura Elegance is a custom PHP and MySQL beauty e-commerce site for Sri Lanka, with hierarchical categories and brands, session cart and wishlist, WhatsApp-led ordering, and an admin back office for products, orders, and testimonials—wrapped in a sakura-themed Bootstrap front end.</p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PDO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sakura Elegance Modal -->
+          <div id="SakuraElegance" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('SakuraElegance')">&times;</span>
+              <h3>Sakura Elegance Web App</h3>
+              <p><a href="https://sakuraeleganceworldwide.com/" target="_blank" rel="noopener noreferrer">sakuraeleganceworldwide.com</a> — live storefront.</p>
+              <p><strong>Sakura Elegance</strong> is a PHP and MySQL e-commerce style storefront for luxury beauty and wellness—skin, hair, body, and drinks or supplements—aimed at Sri Lanka with local context (e.g. Rathmalana), LKR-style pricing, and checkout oriented toward WhatsApp rather than a built-in payment gateway.</br></br>
+              The public site sells the brand story and catalogue: a home page with hero, category highlights, featured and trending products, customer testimonials from the database (marquee with hover pause and click-to-expand modal), an award and recognition block, and a persistent WhatsApp CTA. Shop offers a filterable product grid; product pages include a gallery, quantity, add to cart and wishlist, and WhatsApp ordering. Cart and wishlist use PHP sessions with JSON APIs updating navbar badges after AJAX actions. Contact uses a form sent via Gmail SMTP.</br></br>
+              The <strong>/admin</strong> panel is session-protected with login, logout, optional TOTP two-factor authentication, password change, login rate limiting, and audit logging. Admins manage categories (tree via parent IDs), brands, products (including featured, trending, bundles, and visibility fields), orders, and testimonials.</br></br>
+              Configuration lives in <code>config.php</code> (site URL, database, WhatsApp number, SMTP, social links). The schema is bootstrapped from <code>database/setup_complete.sql</code>. Front end uses Bootstrap 5, Bootstrap Icons, custom CSS, and Google Fonts (Dancing Script + Poppins). Security practices include PDO prepared statements, output escaping where used, and hardened session cookies for production HTTPS.</p>
+              <h4>🎯 Key Features:</h4>
+              <ul>
+                <li><strong>Storefront</strong> - Home, shop with filters, product detail with gallery and breadcrumbs, session cart and wishlist, WhatsApp-led checkout, contact form over SMTP.</li>
+                <li><strong>Admin</strong> - Dashboard; CRUD for categories, brands, products, orders, and testimonials; optional 2FA; login rate limit and audit log.</li>
+                <li><strong>APIs</strong> - JSON endpoints for cart and wishlist counts (nav badges) and order-related logging where used.</li>
+                <li><strong>Design</strong> - Sakura and blush palette, soft gradients, responsive navbar with search modal, phone link, and live badge updates.</li>
+              </ul>
+
+              <div class="modal-tech-stack">
+                <span class="modal-tech-tag">PHP</span>
+                <span class="modal-tech-tag">MySQL</span>
+                <span class="modal-tech-tag">PDO</span>
+                <span class="modal-tech-tag">Bootstrap 5</span>
+                <span class="modal-tech-tag">JavaScript</span>
+                <span class="modal-tech-tag">Gmail SMTP</span>
+              </div>
+            </div>
+          </div>
+
           </div>
         </div>
 

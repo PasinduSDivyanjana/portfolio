@@ -27,7 +27,7 @@ const PERSONAL_DATA = {
     // Stats (About page)
     stats: {
         yearsOfStudy: 2,
-        projectsCompleted: 5,
+        projectsCompleted: 6,
         certifications: 5,
         technologies: 10
     },
